@@ -1,8 +1,9 @@
 <form method="POST" action="/posts/:id">
   <h1>Edit your post: </h1>
-  <label for="name">Name: </label>
+  <h3>Post name: <%= @post.name %></h3>
+
   <input type="hidden" id="hidden" name="_method" value="patch"><br>
-  <label for="content">Content: </label>
+  <p>Post content: <%= @post.content %></p>
   <input type="hidden" id="hidden" name="_method" value="patch"><br>
   <button type="submit" value="submit">Submit</button>
 </form>
