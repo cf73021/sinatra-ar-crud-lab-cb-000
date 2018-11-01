@@ -3,12 +3,12 @@
   <input type="hidden" id="hidden" name="_method" value="patch"><br>
   <p>
     <label for="name">Post Title: </label>
-    <input type="text" name="post[name]" id="name" value="<%= @post.name %>">
+    <input type="text" name="name" id="name" value="<%= @post.name %>">
   </p>
 
   <p>
     <label for="content">Post Content: </label>
-    <textarea name="post[content]" id="content"><%= @post.content %></textarea>
+    <textarea name="content" id="content"><%= @post.content %></textarea>
   </p>
   <button type="submit" id="submit" value="update">Update</button>
 </form>
