@@ -39,7 +39,7 @@ class ApplicationController < Sinatra::Base
 
   post '/posts/:id' do
     args = {name: params[:name], content: params[:content]}
-    @post = Post.create(args)
+    @post = Post.update(args)
     erb :index
   end
 end
