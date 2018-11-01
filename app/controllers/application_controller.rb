@@ -40,6 +40,6 @@ class ApplicationController < Sinatra::Base
   post '/posts/:id' do
     args = {name: params[:name], content: params[:content]}
     @post = Post.update(args)
-    erb :index
+    erb 'posts/:id'
   end
 end
